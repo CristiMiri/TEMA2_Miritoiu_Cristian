@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-
+//TODO: Add button to link to login page and Page Header
 namespace PS_TEMA2.ViewModel
 {
-    internal class PrezentareVM : INotifyPropertyChanged
+    internal class HomeVM : INotifyPropertyChanged
     {
         //Data consistency
         private PrezentareRepository prezentareRepository;
@@ -24,9 +24,9 @@ namespace PS_TEMA2.ViewModel
         public Sectiune sectiuneSelectata;
         private Dictionary<int, string> comboPrezentari= new Dictionary<int, string>();
         //Commands              
-        private PrezentareCommands searchPrezentare;
-        private PrezentareCommands createParticipant;
-        public PrezentareVM()
+        private HomeCommands searchPrezentare;
+        private HomeCommands createParticipant;
+        public HomeVM()
         {
             
             prezentareRepository = new PrezentareRepository();
@@ -34,8 +34,8 @@ namespace PS_TEMA2.ViewModel
             listaprezentari = prezentareRepository.GetPrezentari();
             FillComboPrezentari();
             participant = new Participant();
-            searchPrezentare = new PrezentareCommands(Search);
-            createParticipant = new PrezentareCommands(Create);
+            searchPrezentare = new HomeCommands(Search);
+            createParticipant = new HomeCommands(Create);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -54,7 +54,7 @@ namespace PS_TEMA2.ViewModel
             set
             {
                 listaprezentari = value;
-                OnPropertyChanged("Prezentari");
+                OnPropertyChanged("ListaPrezentari");
             }
         }
         public List<Sectiune> ListaSectiuni
@@ -89,15 +89,16 @@ namespace PS_TEMA2.ViewModel
             }
         }
         //getters and setters commands
-        public PrezentareCommands SearchPrezentare
+        public HomeCommands SearchPrezentare
         {
             get { return searchPrezentare; }
         }
-        public PrezentareCommands CreateParticipant
+        public HomeCommands CreateParticipant
         {
             get { return createParticipant; }
         }
 
+        //Commands implementation
         public void Create()
         {
             try
@@ -123,7 +124,6 @@ namespace PS_TEMA2.ViewModel
             }
         }
 
-        //Commands implementation
         public void Read()
         {
 
@@ -136,12 +136,12 @@ namespace PS_TEMA2.ViewModel
                 if (sectiuneSelectata != null)
                 {
                     listaprezentari = prezentareRepository.getPrezentariBySectiune(sectiuneSelectata);
-                    OnPropertyChanged("Prezentari");
+                    OnPropertyChanged("ListaPrezentari");
                 }
                 if (sectiuneSelectata == Sectiune.TOATE)
                 {
                     listaprezentari = prezentareRepository.GetPrezentari();
-                    OnPropertyChanged("Prezentari");
+                    OnPropertyChanged("ListaPrezentari");
                 }
                 
             }catch(Exception e)

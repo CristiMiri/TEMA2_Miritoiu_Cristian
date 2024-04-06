@@ -3,12 +3,12 @@ using System.Windows.Input;
 
 namespace PS_TEMA2.ViewModel.Commands
 {
-    public class PrezentareCommands : ICommand
+    public class HomeCommands : ICommand
     {
         public event EventHandler CanExecuteChanged;
         private Action action;
 
-        public PrezentareCommands(Action action)
+        public HomeCommands(Action action)
         {
             this.action = action;
         }

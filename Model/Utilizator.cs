@@ -90,5 +90,9 @@ namespace PS_TEMA2.Model
             set { telefon = value; }
         }
 
+        public override string ToString()
+        {
+            return "Utilizatorul cu id-ul " + id + " si numele " + nume + " are email-ul " + email + " si parola " + parola + " si este de tipul " + userType + " si are numarul de telefon " + telefon + ".";
+        }
     }
 }

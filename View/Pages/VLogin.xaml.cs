@@ -1,6 +1,8 @@
-﻿using PS_TEMA2.Model;
-using PS_TEMA2.ViewModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PS_TEMA2
+namespace PS_TEMA2.View.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for VLogin.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VLogin : UserControl
     {
-        public MainWindow()
+        public VLogin()
         {
             InitializeComponent();
-            //HomeVM homeVM = new HomeVM();
-            AdminVM adminVM = new AdminVM();
-            this.DataContext = adminVM;
         }
     }
 }
