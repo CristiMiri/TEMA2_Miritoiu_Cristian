@@ -44,9 +44,10 @@
                         <TextBox Name="txtTelefon" Style="{StaticResource InputControlStyle}" Grid.Column="1" Grid.Row="2"
                                  Text="{Binding Path=Participant.Telefon, Mode=TwoWay}"/>
                         <Label  Style="{StaticResource LabelBaseStyle}" Content="Prezentare:" Grid.Column="0" Grid.Row="3"/>
-                        <ComboBox Name="cmbPrezentare" Style="{StaticResource InputControlStyle}" Grid.Column="1" Grid.Row="3"
+                        <ComboBox Name="cmbPrezentare"  Grid.Column="1" Grid.Row="3"
                                    DisplayMemberPath="Value"
                                    SelectedValuePath="Key"
+                                  Style="{StaticResource ComboBoxBaseStyle}"
                                    ItemsSource="{Binding Path=ComboPrezentari}"
                                   SelectedValue="{Binding Path=Participant.UserType, Mode=TwoWay}"/>
                         <!-- Confirmation Button -->
@@ -61,7 +62,7 @@
 
                 <UniformGrid Columns="3" Rows="1" >
                     <Label  Style="{StaticResource LabelBaseStyle}" Content="Cautare dupa Sectiune" HorizontalAlignment="Left" Width="Auto"/>
-                    <ComboBox Name="cmbSectiune" Style="{StaticResource InputControlStyle}" 
+                    <ComboBox Name="cmbSectiune" Style="{StaticResource ComboBoxBaseStyle}"
                               SelectedItem="{Binding Path=SectiuneSelectata, Mode=TwoWay}"
                               ItemsSource="{Binding Path=ListaSectiuni}"/>
                     <Button Content="Afisare" HorizontalAlignment="Center" Style="{DynamicResource ButtonBaseStyle}" Command="{Binding Path=SearchPrezentare}"/>

@@ -22,8 +22,9 @@ namespace PS_TEMA2
         {
             InitializeComponent();
             //HomeVM homeVM = new HomeVM();
-            UtilizatorVM utilizatorVM = new UtilizatorVM();
-            this.DataContext = utilizatorVM;
+            //this.DataContext = homeVM;
+            OrganizatorVM organizatorVM = new OrganizatorVM();
+            this.DataContext = organizatorVM;
         }
     }
 }
