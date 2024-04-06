@@ -38,24 +38,25 @@
         <DataGrid x:Name="TabelConferinte" 
                   AutoGenerateColumns="False" 
                   Grid.Row="2" 
-                  Style="{StaticResource DataGridBaseStyle}">
+                  Style="{StaticResource DataGridBaseStyle}"
+                  ItemsSource="{Binding Path=ListaCompleta}">
             <DataGrid.ColumnHeaderStyle>
                 <StaticResource ResourceKey="DataGridColumnHeaderStyle"/>
             </DataGrid.ColumnHeaderStyle>
             <DataGrid.Columns>
-                <!-- Define your columns here -->
-                <DataGridTextColumn Header="Prezentare ID" Binding="{Binding PrezentareId}" Width="*" />
-                <DataGridTextColumn Header="Prezentare Titlu" Binding="{Binding PrezentareTitlu}" Width="*" />
-                <DataGridTextColumn Header="Conferinta ID" Binding="{Binding ConferintaId}" Width="*" />
-                <DataGridTextColumn Header="Conferinta Titlu" Binding="{Binding ConferintaTitlu}" Width="*" />
-                <DataGridTextColumn Header="Conferinta Locatie" Binding="{Binding ConferintaLocatie}" Width="*" />
-                <DataGridTextColumn Header="Conferinta Data" Binding="{Binding ConferintaData}" Width="*" />
-                <DataGridTextColumn Header="Prezentare Autor" Binding="{Binding PrezentareAutor}" Width="*" />
-                <DataGridTextColumn Header="Prezentare Descriere" Binding="{Binding PrezentareDescriere}" Width="*" />
-                <DataGridTextColumn Header="Prezentare Data" Binding="{Binding PrezentareData}" Width="*" />
-                <DataGridTextColumn Header="Prezentare Ora" Binding="{Binding PrezentareOra}" Width="*" />
-                <DataGridTextColumn Header="Prezentare Sectiune" Binding="{Binding PrezentareSectiune}" Width="*" />
-                <DataGridTextColumn Header="Prezentare Conferinta ID" Binding="{Binding PrezentareConferintaId}" Width="*" />
+                <!-- Columns  -->
+                <DataGridTextColumn Header="Prezentare ID" Binding="{Binding PrezentareId}"  />
+                <DataGridTextColumn Header="Prezentare Titlu" Binding="{Binding PrezentareTitlu}"  />
+                <DataGridTextColumn Header="Conferinta ID" Binding="{Binding ConferintaId}"  />
+                <DataGridTextColumn Header="Conferinta Titlu" Binding="{Binding ConferintaTitlu}"  />
+                <DataGridTextColumn Header="Conferinta Locatie" Binding="{Binding ConferintaLocatie}"  />
+                <DataGridTextColumn Header="Conferinta Data" Binding="{Binding ConferintaData}"  />
+                <DataGridTextColumn Header="Prezentare Autor" Binding="{Binding PrezentareAutor}"  />
+                <DataGridTextColumn Header="Prezentare Descriere" Binding="{Binding PrezentareDescriere}"  />
+                <DataGridTextColumn Header="Prezentare Data" Binding="{Binding PrezentareData}"  />
+                <DataGridTextColumn Header="Prezentare Ora" Binding="{Binding PrezentareOra}"  />
+                <DataGridTextColumn Header="Prezentare Sectiune" Binding="{Binding PrezentareSectiune}"  />
+                <DataGridTextColumn Header="Prezentare Conferinta ID" Binding="{Binding PrezentareConferintaId}"  />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

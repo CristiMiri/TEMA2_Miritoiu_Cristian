@@ -38,7 +38,7 @@ namespace PS_TEMA2.ViewModel
             createParticipant = new HomeCommands(Create);
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
         private void OnPropertyChanged(string v)
         {
             if (PropertyChanged != null)

@@ -22,8 +22,8 @@ namespace PS_TEMA2
         {
             InitializeComponent();
             //HomeVM homeVM = new HomeVM();
-            AdminVM adminVM = new AdminVM();
-            this.DataContext = adminVM;
+            UtilizatorVM utilizatorVM = new UtilizatorVM();
+            this.DataContext = utilizatorVM;
         }
     }
 }
