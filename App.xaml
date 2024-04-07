@@ -1,11 +1,30 @@
 ﻿<Application x:Class="PS_TEMA2.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:PS_TEMA2"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:PS_TEMA2" xmlns:vm="clr-namespace:PS_TEMA2.ViewModel"
+             xmlns:view="clr-namespace:PS_TEMA2.View.Pages"             
+             StartupUri="./View/MainWindow.xaml">
     <Application.Resources>
 
-        <!-- Base brush definitions for reuse -->
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type vm:AdminVM}">
+                <view:VAdmin/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:HomeVM}">
+                <view:VHome/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:LoginVM}">
+                <view:VLogin/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:OrganizatorVM}">
+                <view:VOrganizator/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:UtilizatorVM}">
+                <view:VUtilizator/>
+            </DataTemplate>
+
+
+            <!-- Base brush definitions for reuse -->
         <SolidColorBrush x:Key="PrimaryColor" Color="#FF2779A7"/>
         <!-- Corrected ARGB format -->
         <SolidColorBrush x:Key="SecondaryColor" Color="#FF49C5B6"/>
@@ -236,7 +255,7 @@
             <GradientStop Color="#FF2779A7" Offset="0"/>
             <GradientStop Color="#FF49C5B6" Offset="1"/>
         </LinearGradientBrush>
-
+        </ResourceDictionary>
     </Application.Resources>
 
 </Application>

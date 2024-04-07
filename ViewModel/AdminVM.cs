@@ -26,7 +26,8 @@ namespace PS_TEMA2.ViewModel
         private AdminCommands updateUtilizator;
         private AdminCommands deleteUtilizator;
         private AdminCommands selectUtilizator;
-
+        private AdminCommands bacKCommand;
+        private Action<string> changeView;
         public AdminVM()
         {
             utilizatorSelectat = new Utilizator();
@@ -36,6 +37,7 @@ namespace PS_TEMA2.ViewModel
             this.updateUtilizator = new AdminCommands(Update);
             this.deleteUtilizator = new AdminCommands(Delete);
             this.selectUtilizator = new AdminCommands(Select);
+            this.bacKCommand = new AdminCommands(Back);
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -94,6 +96,16 @@ namespace PS_TEMA2.ViewModel
             get { return selectUtilizator; }
         }
 
+        public AdminCommands BackCommand
+        {
+            get { return bacKCommand; }
+        }
+
+        public Action<string> ChangeView
+        {
+            get { return changeView; }
+            set { changeView = value; }
+        }   
         //Commands implementation
         public void Create()
         {
@@ -191,6 +203,11 @@ namespace PS_TEMA2.ViewModel
         {
             utilizatorSelectat = new Utilizator();
             OnPropertyChanged("UtilizatorSelectat");
+        }
+
+        private void Back()
+        {
+            changeView("Home");
         }
     }
 

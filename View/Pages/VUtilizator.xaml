@@ -23,6 +23,7 @@
                 HorizontalAlignment="Right" 
                 Width="100" 
                 Style="{StaticResource ButtonBaseStyle}" 
+                Command="{Binding Path=BackCommand}"
                 />
 
         <!-- Header TextBlock -->

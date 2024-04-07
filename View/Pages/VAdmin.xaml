@@ -79,7 +79,9 @@
                             HorizontalAlignment="Stretch"
                             Command="{Binding Path=UpdateUtilizator}"/>
 
-                    <Button x:Name="BackButton" Content="Back" Margin="0,0,50,10" Grid.Column="1" HorizontalAlignment="Right" Width="100" Style="{StaticResource ButtonBaseStyle}"/>
+                    <Button x:Name="BackButton" Content="Back" Margin="0,0,50,10" Grid.Column="1" HorizontalAlignment="Right" Width="100" 
+                            Command="{Binding Path=BackCommand}"
+                            Style="{StaticResource ButtonBaseStyle}"/>
                 </Grid>
 
 
@@ -90,8 +92,7 @@
 
             <!-- DataGrid -->
             <DataGrid Grid.Row="2" x:Name="TabelUtilizatori" Style="{StaticResource DataGridBaseStyle}"
-                      SelectedItem="{Binding Path=UtilizatorSelectat}"
-                      
+                      SelectedItem="{Binding Path=UtilizatorSelectat}"                      
                       ItemsSource="{Binding Path=ListaUtilizatori}">
                 <DataGrid.ColumnHeaderStyle>
                     <StaticResource ResourceKey="DataGridColumnHeaderStyle"/>

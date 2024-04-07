@@ -1,5 +1,6 @@
 ﻿using PS_TEMA2.Model;
 using PS_TEMA2.Model.Repositories;
+using PS_TEMA2.ViewModel.Commands;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,13 +20,17 @@ namespace PS_TEMA2.ViewModel
         public List<Prezentare> listaprezentari;
         public List<Conferinta> listaConferinte;
         public object? listaCompleta;
+
+        //Commands
+        private Action<string> changeView;
+        private HomeCommands backCommand;
         public UtilizatorVM()
         {
             prezentareRepository = new PrezentareRepository();
             conferintaRepository = new ConferintaRepository();
             listaprezentari = prezentareRepository.GetPrezentari();
             listaConferinte = conferintaRepository.GetConferinte();
-
+            this.backCommand = new HomeCommands(Back);
             FillListaCompleta();
         }
 
@@ -66,6 +71,17 @@ namespace PS_TEMA2.ViewModel
             }
         }
 
+        //Commands getters
+        public Action<string> ChangeView
+        {
+            get { return changeView; }
+            set { changeView = value; }
+        }
+
+        public HomeCommands BackCommand
+        {
+            get { return backCommand; }
+        }
         //Fill the list with all the data from the other two lists
         private void FillListaCompleta()
         {
@@ -90,5 +106,9 @@ namespace PS_TEMA2.ViewModel
             OnPropertyChanged("ListaCompleta");
         }
 
+        private void Back()
+        {
+            changeView("Home");
+        }
     }
 }

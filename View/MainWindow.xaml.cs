@@ -16,15 +16,14 @@ namespace PS_TEMA2
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window 
     {
         public MainWindow()
         {
             InitializeComponent();
-            //HomeVM homeVM = new HomeVM();
-            //this.DataContext = homeVM;
-            OrganizatorVM organizatorVM = new OrganizatorVM();
-            this.DataContext = organizatorVM;
+            MainVM mainVM = new MainVM(); 
+            this.DataContext = mainVM; 
+            mainVM.CurrentViewModel = new HomeVM();
         }
     }
 }
