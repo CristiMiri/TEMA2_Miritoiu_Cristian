@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PS_TEMA2.Model.Repositories.ConferintaRepository">
+    <Position X="14" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAAgAAAAAAAAAAACAACAAEAAAQAAQA=</HashCode>
+      <FileName>Model\Repositories\ConferintaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.Model.Repositories.ParticipantiRepository">
+    <Position X="10.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAwAAAQACAQAAAIAAkAgAAAAAAAgAACAAAAAAAAA=</HashCode>
+      <FileName>Model\Repositories\ParticipantiRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.Model.Repositories.PrezentareRepository">
+    <Position X="14" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAIAgAACIAAgAAAAAAAAAAAAAIAAASAAAgBAAII=</HashCode>
+      <FileName>Model\Repositories\PrezentareRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.Model.Repositories.UtilizatorRepository">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAJAAAKCAAIAAEQQAAABACAAAEAAAgAAAAAABAA=</HashCode>
+      <FileName>Model\Repositories\UtilizatorRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TEMA1_PS.Model.Repositories.Repository">
+    <Position X="12" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAEAAAAAAFAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Repositories\Repository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.Model.Conferinta">
+    <Position X="8.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAACAAAAAgAAAAAAAAAAAAIBAAACASAEAAAgA=</HashCode>
+      <FileName>Model\Conferinta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.Model.Participant">
+    <Position X="6.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAAAAAAAQABAAAAAABAAA=</HashCode>
+      <FileName>Model\Participant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.Model.Prezentare">
+    <Position X="12" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAgCAAABAAAAAQAAAAAAAAAAACAAABAiAAAQBkAIAgQ=</HashCode>
+      <FileName>Model\Prezentare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.Model.Utilizator">
+    <Position X="14" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAACAAAAAkAAAAAAAAAAAECAAABAgAAAQBAgA=</HashCode>
+      <FileName>Model\Utilizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.View.Pages.VAdmin" BaseTypeListCollapsed="true">
+    <Position X="12" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Pages\VAdmin.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.View.Pages.VHome" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Pages\VHome.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.View.Pages.VLogin" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Pages\VLogin.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.View.Pages.VOrganizator" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Pages\VOrganizator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.View.Pages.VUtilizator" BaseTypeListCollapsed="true">
+    <Position X="12" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Pages\VUtilizator.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.App">
+    <Position X="14" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.Commands.AdminCommands" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\Commands\AdminCommands.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.Commands.HomeCommands" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\Commands\HomeCommands.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.Commands.LoginCommands" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\Commands\LoginCommands.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.Commands.MainCommands" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAQQAAEQAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModel\Commands\MainCommands.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.Commands.OrganizatorCommands" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\Commands\OrganizatorCommands.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.AdminVM" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Aw0EAAIBBQAACBDAIAAQQAAAgCEACEAAAgBAQAAAACA=</HashCode>
+      <FileName>ViewModel\AdminVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.HomeVM" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACAAAEEgAACJAAAEgAgggAAIUAAACAAkAAgAoA=</HashCode>
+      <FileName>ViewModel\HomeVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.LoginVM" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAJASAACAAgIAAAAAAAgAAAAAAABIAQAAaAAAA=</HashCode>
+      <FileName>ViewModel\LoginVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.MainVM" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAAAAEAAIABAAAACgAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>ViewModel\MainVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.OrganizatorVM" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAMAkMGLgAAwiCggIACFXEAgoEgEAAkwBAoIvHQCC5A=</HashCode>
+      <FileName>ViewModel\OrganizatorVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PS_TEMA2.ViewModel.UtilizatorVM" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAACJAAAAiQAAIAEAEAAAgAAAAAABAEAAAABAAAA=</HashCode>
+      <FileName>ViewModel\UtilizatorVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="PS_TEMA2.Model.Sectiune">
+    <Position X="10.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAAgQA=</HashCode>
+      <FileName>Model\Prezentare.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PS_TEMA2.Model.UserType">
+    <Position X="10.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Utilizator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
